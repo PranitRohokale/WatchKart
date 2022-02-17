@@ -15,7 +15,7 @@
 
     <div class="container">
       <div class="nav">
-        <span class="one " onclick="changeColor(event);"></span>
+        <span class="one" onclick="changeColor(event);"></span>
         <i class="one"></i>
         <span class="two active" onclick="changeColor(event);"></span>
         <i class="two"></i>
@@ -26,18 +26,18 @@
         <!-- <img src="./images/watch1.png" alt="watch" /> -->
       </div>
 
-      <div class="row">
+      <div class="row" >
         <div class="col">
           <h1>The Watch</h1>
-          <p>
+          <p s>
             With an image in the side of this conetent, you can use this section
             to write about some cool thing about your product or its features.
           </p>
           <ul>
-              <li>Compatible with all Devices</li>
-              <li>Android and iOS Support</li>
-              <li>Activity & Health Tracker</li>
-              <li>Read & reply to messages</li>
+            <li>Compatible with all Devices</li>
+            <li>Android and iOS Support</li>
+            <li>Activity & Health Tracker</li>
+            <li>Read & reply to messages</li>
           </ul>
         </div>
         <div class="imgBx">
@@ -47,10 +47,11 @@
     </div>
 
     <ul class="menu">
-      <li><a href="./index.html">Home</a></li>
-      <li><a href="./varites.html">Products</a></li>
-      <li><a href="#">Features</a></li>
-      <li><a href="./buy.html">Buy Now</a></li>
+      <ul class="menu">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./varites.html">Products</a></li>
+        <li><a href="./buy.html">Buy Now</a></li>
+      </ul>
     </ul>
     <script>
       function changeColor(event) {
@@ -59,9 +60,10 @@
         });
 
         event.target.classList.add("active");
-        const element = document.querySelector('span.active')
+        const element = document.querySelector("span.active");
         console.log(getComputedStyle(element).background);
-        document.querySelector("body").style.background = getComputedStyle(element).background;
+        document.querySelector("body").style.background =
+          getComputedStyle(element).background;
       }
 
       function toggle() {
